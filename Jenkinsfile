@@ -1,6 +1,6 @@
 pipeline {
   // need to add agents
-  agents any
+  agent any
 
   tools {
     // var 'mymaven': Jenkins tools configured under Global Tool Configuration

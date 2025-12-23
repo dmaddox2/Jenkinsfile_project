@@ -13,7 +13,7 @@ pipeline {
     stage('Clone Repo')
     {
       steps {
-        git 'https://github.com/github-simplilearn-net.MavenBuild.git'
+        git 'https://github.com/github-simplilearn-net/MavenBuild.git'
       }
     }
 

@@ -20,21 +20,21 @@ pipeline {
     stage('Compile Code')
     {
       steps {
-        sh 'mvn compile'
+        sh 'mvn clean compile -Dmaven.compiler.source=8 -Dmaven.compiler.target=8'
       }
     }
 
     stage('Test Code')
     {
       steps {
-        sh 'mvn test'
+        sh 'mvn clean test -Dmaven.compiler.source=8 -Dmaven.compiler.target=8'
       }
     }
 
     stage('Package Code')
     {
       steps {
-        sh 'mvn package'
+        sh 'mvn package -Dmaven.compiler.source=8 -Dmaven.compiler.target=8'
       }
     }
     

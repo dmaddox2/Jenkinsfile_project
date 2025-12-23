@@ -5,7 +5,7 @@ pipeline {
   tools {
     // var 'mymaven': Jenkins tools configured under Global Tool Configuration
     // new tools added
-    maven 'mymaven'
+    maven 'Maven Install'
   }
 
   stages {
